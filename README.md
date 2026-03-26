@@ -11,8 +11,10 @@ The model can only operate in operator-controlled mode. Functions are distribute
 The decision to use two microcontrollers was prompted by the insufficient number of available contacts on the ESP32-S3-CAM board. These are already largely used when connecting the video camera. Furthermore, delegating motion control functions to another microcontroller allows, if necessary, to decouple the power supply from the video camera and the motor. \
 The model platform is a two-wheel chassis with DC motors and gearboxes. The L298N motor driver is connected to a power supply consisting of two 18650 battery cells with a total voltage of 7.4V and a BMS 2S protection board. The driver, in turn, generates a stabilized 5V output voltage for the master and slave microcontroller boards.  
 The car has headlights (two LEDs) and a switch. The headlight turn-on signal is pre-amplified by an SN75452 open collector output IC. \
-All necessary components were purchased on Aliexpress. The photo shows the boards for both microcontrollers: \
-![uC1](img/ESP32-S3-CAM.jpg) .![uC2](img/esp32-c3-supermini.jpg)  \
+All necessary components were purchased on Aliexpress. The photo shows the boards for both microcontrollers:
+
+![fig1](img/ESP32-S3-CAM.jpg) . ![fig2](img/esp32-c3-supermini.jpg) 
+
 The connection diagram of the elements is shown below.: 
 
 ![connection diagram](img/espcar_scheme.jpg)
