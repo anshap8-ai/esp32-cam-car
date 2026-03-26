@@ -22,12 +22,12 @@ The connection diagram of the elements is shown below.:
 ### Software
 The microcontroller control programs were developed using the Arduino IDE 2.3.8, C++ programming language. The source code for the master and slave microcontrollers is provided in the following files: *src/S3CAM_master.ino* и *src/C3_slave.ino*.
 
-#### Master microcontroller
+#### Master MCU
 The program for the host microcontroller is a web server from the Arduino IDE example library, adapted to the project's needs. A connection was established between the OV2640 video camera and two versions of the ESP32-S3-CAM development boards purchased from Aliexpress.
 The program generates a simple SPA application (an HTML page containing a Javascript script) for controlling the car from a browser. UART1 is enabled on pins 17 and 18 for communication with the slave controller. UART0 is used for debugging the application.  
 Before compiling the program in the Arduino IDE, you must specify the *ssid* and *password* of your home network. After compiling and uploading the program to the MCU, restart the MCU, open the serial monitor, wait for the MCU to establish a WiFi connection to your home network, and use the resulting IP address of the MCU to enter it in the address bar of your computer (smartphone) browser. The application's HTML page should load. The LED headlights will blink twice to indicate that the application is ready to launch.
 
-#### Slave microcontroller
+#### Slave MCU
 The program for the ESP32-C3 supermini slave MCU is similar in structure to the Arduino Nano program from my *arduinobtcar* project, but has a minimal set of features. UART1 is enabled on pins 5 and 6 for communication with the master controller. UART0 is used for debugging the application. \
 Before compiling the program in the Arduino IDE, configure the following settings: *Board: "Lolin C3 Mini"; USB-CDC on Boot: "Enabled"; Upload Speed: "115200"*. These settings are required for the serial monitor to function properly when using the ESP32-C3 supermini. \
 Implementation details can be found in the comments in the source code of the programs.
