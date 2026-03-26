@@ -13,7 +13,7 @@ The model platform is a two-wheel chassis with DC motors and gearboxes. The L298
 The car has headlights (two LEDs) and a switch. The headlight turn-on signal is pre-amplified by an SN75452 open collector output IC. \
 All necessary components were purchased on Aliexpress. The photo shows the boards for both microcontrollers:
 
-![fig1](img/ESP32-S3-CAM.jpg) . ![fig2](img/esp32-c3-supermini.jpg) 
+![fig1](img/esp32-s3-cam.jpg) . ![fig2](img/esp32-c3-supermini.jpg) 
 
 The connection diagram of the elements is shown below.: 
 
