@@ -1,4 +1,4 @@
-## A WiFi-car with a camera based on two ESP32 controllers
+## A WiFi-car with a camera based on two ESP32 microcontrollers
 
 ![view1](img/car4x.jpg) .![view2](img/car3x.jpg)
 ![view3](img/car1x.jpg) .![view4](img/car2x.jpg)
