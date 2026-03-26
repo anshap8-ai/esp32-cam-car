@@ -1,4 +1,4 @@
-## WiFi-мобиль с камерой на двух контроллерах ESP32
+## WiFi-мобиль с камерой на двух микроконтроллерах ESP32
 
 ![view1](img/car4x.jpg) .![view2](img/car3x.jpg)
 ![view3](img/car1x.jpg) .![view4](img/car2x.jpg)
